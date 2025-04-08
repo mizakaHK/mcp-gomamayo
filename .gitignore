@@ -1,0 +1,6 @@
+# Binaries for programs and plugins
+bin/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db

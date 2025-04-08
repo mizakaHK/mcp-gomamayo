@@ -1,0 +1,16 @@
+version: '3'
+
+tasks:
+  default:
+    desc: Build and run the mcp-gomamayo application
+    cmds:
+      - task: build
+
+  build:
+    desc: Build the mcp-gomamayo application
+    cmds:
+      - echo "Building..."
+      - mkdir -p bin
+      - go build -o bin/mcp-gomamayo main.go
+    generates:
+      - bin/mcp-gomamayo
